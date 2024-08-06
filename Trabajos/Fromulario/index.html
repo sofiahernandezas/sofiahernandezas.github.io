@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <form action="">
+        <h1>Formulario de registro</h1>
+        <label for="nombre">Nombre: </label><!--en el for del label tiene que ir el id del input correspondeinte para unirlos-->
+        <input type="text" name="nombre" id="nombre" required><br><br>
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Escriba sus dos apellidos" required><br>
+        <p>Género:
+            <input type="radio" name="fmo" id="f" value="f" required><label for="f">Femenino</label> <!--A diferencia del p, con el label, al hacer click sobre el texto dentro del label por ejemplo, alterna el botón de opción o la casilla de verificación, es decir, la marca. Con el p, si no das cklick en el casillero, no se marca -->
+            <input type="radio" name="fmo" id="m" value="m" required><label for="m">Masculino</label>
+            <input type="radio" name="fmo" id="o" value="o"><label for="o">Otro</label>
+        </p>
+        <label for="email">Correo: </label><input type="email" id="email"><br><br>
+        <input type="checkbox" name="casilla" id="checkbox1"><label for="checkbox1">Deseo recibir información sobre novedades y ofertas</label><br><br>
+        <input type="checkbox" name="cas" id="checkbox2"><label for="checkbox2">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label><br><br>
+        <input type="submit" name="enviar" value="Enviar">
+
+    </form>
+</body>
+</html>

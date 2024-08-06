@@ -1,0 +1,89 @@
+body, a {
+   background-image: url("./imagenes/fondo 7.jpg"); /*Para establecer imágenes de fondo en un elemento, en este caso, el body*/
+   background-attachment: fixed;  /* fija la imagen de fondo para que no se mueve cuando se desplaza el contenido de la página.*/
+   background-position: center; /*se utiliza para especificar la posición inicial de una imagen de fondo dentro de su contenedor*/
+   color: white; /*color de la letra de todo el body y los a*/
+   width: 700px; /*establece el ancho del elemento, en este caso, el body*/
+   margin: auto;/* Centra todo el body horizontalmente, con todos los elementos */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*lista tipos de letra de un elemento. El navegador mostrará la priemra fuente que pueda de las listadas*/
+   margin-bottom: 100px;  /* Ajusta este valor según el alto del footer. Si no està esto, el footer tapa parte del final del html (fomrulario)*/
+   background-color: black; /* Used if the image is unavailable */
+}
+
+
+div.inicio, h2.centrado {
+    text-align: center; /*para centrar el texto del div con la clase indicada y los h2 con la clase indicada*/
+}
+
+ .image-container {
+        width: 400px; /* Ajusta según el tamaño de tu imagen original */
+        height: 400px; /* Ajusta según el tamaño de tu imagen original. Si se lo saco, la imagen 1 se ve mal en el margen inferior*/
+        margin: auto; /* Centra el contenido horizontalmente*/
+       
+        border-radius: 50%; /* Aplica el borde redondeado al contenedor */
+        overflow: hidden; /* Oculta contenido que se desborde del contenedor para que todas las imagenes que estèn en el mismo, tengan bordes redondeados. Si no está, a la imagen 1 no le aplica el border-radius */
+    }
+ img.avatar {
+        transition: opacity 0.3s ease; /* para que la transiciòn al hacer hover sea suave*/
+    }
+    
+ .image-container:hover .avatar {
+        opacity: 0; /*La opacidad de la imagen (.avatar) se establece a 0, haciéndola invisible.*/
+    }
+    
+ .image-container:hover {
+        background-image: url('./imagenes/myAvatar2.png'); /*La imagen de fondo del contenedor cambia a '/imagenes/myAvatar2.png' cuando se pasa el ratòn sobre el contenedor*/
+      
+    }
+
+
+
+table {
+  
+    text-align: justify; /* para justificar el texto de la tabla*/
+
+}
+
+
+
+form {
+    background-color: bisque; /* Color de fondo del formulario */
+    padding: 20px; /*establece el área de relleno en los cuatro lados de un elemento a la vez.*/
+    border-radius: 8px; /*redondea las esquinas del borde exterior de un elemento*/
+    width: 300px;
+    color: black; /*de la letra del elemento form*/
+    align-items: center; /*Centrar las alineaciones de todos los elementos del elemento form*/
+}
+
+#enviar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo, .carpeta{
+    width: 100px; /* Ancho deseado de la imagen */
+    border-radius: 10%;
+   
+        
+}
+
+
+
+#resumen a:hover {
+    font-size: 15px; /* Tamaño de fuente aumentado cuando el ratón toca el link*/
+    color: violet; /* Color de fuente cuando el ratòn toca el link */
+  }
+
+#pie {
+    text-align: center;
+    
+    background-color: rgb(66, 36, 66);
+    color: white;
+    width: 100%;
+    position: fixed;  /* Fija el footer en la parte inferior */
+    bottom: 0;        /* Ajusta el footer al fondo de la pantalla */
+    left: 0;          /* Ajusta el footer a la izquierda */
+  }
+
+
+
+
